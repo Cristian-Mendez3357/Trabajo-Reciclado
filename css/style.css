@@ -1,0 +1,189 @@
+*¨{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient( to right, black, #4793AF);
+}
+
+main{
+    display: flex;
+}
+
+nav ul li a {
+    color: black;
+}
+
+.nav-container{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    border-bottom: solid 2px white;
+    display: block;
+    color: black;
+}
+
+aside {
+    background-color:lightslategray ;
+    width: 20%;
+    height: auto;
+    border-right: solid 2px black;
+}
+
+aside ul {
+    padding-top: 3rem;
+    margin: 0;
+    list-style:none;    
+}
+
+aside ul li a {
+
+    color: white;
+}
+
+.primera_linea{
+    padding-top: 1rem;
+}
+
+.ultima_linea{
+    padding-bottom: 1rem;
+}
+
+section {
+    text-align: left;
+    margin: 0;
+    padding: 0 2rem;
+    width: 80%;
+    box-sizing: border-box;
+    color: black;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.container_producto{
+    background-color: #FFC470;
+    border: 2px solid black;
+    border-top-right-radius: 5%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.contenedor_grid{
+    display: grid;
+    grid-template-areas:
+     "aplicaciones produccion"
+     "especificaciones origen";
+}
+
+.contenedor1{grid-area: aplicaciones ;}
+.contenedor2{grid-area: produccion ;}
+.contenedor3{grid-area: especificaciones ;}
+.contenedor4{grid-area: origen ;}
+
+
+section h1{
+    text-align: center;
+}
+
+.articulo{
+    background-color: lightgray;
+    padding: 2rem;
+    border: solid 2px black;
+    border-radius: 5%;
+
+}
+
+
+footer{
+    border-top: solid 2px white;
+    background-color:black;
+    color: white;
+    height: auto;
+
+}
+
+footer h2 {
+    margin: 0;
+    height: 10rem;
+    text-align: center;
+}
+
+.img_logo1{
+    padding: 4rem 0;
+    height: 500px;
+}
+
+footer img {
+    padding-left: 45%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+    height: 4rem;
+}
+
+@media only screen and (max-width: 500px){
+
+    main{
+        display: block;
+    }
+
+    
+ aside {
+    width: 100%;
+    height: auto;
+ }
+
+ aside ul {
+    padding-bottom: 1rem;    
+ }
+
+ section {
+    width: 100%;
+ }
+
+  p {
+    text-align: justify;
+ }
+    
+ .contenedor_grid{
+    display: grid;
+    grid-template-areas:
+     "aplicaciones" 
+     "produccion"
+     "especificaciones" 
+     "origen";
+    }
+
+ .contenedor1{grid-area: aplicaciones ;}
+ .contenedor2{grid-area: produccion ;}
+ .contenedor3{grid-area: especificaciones ;}
+ .contenedor4{grid-area: origen ;}
+
+ .img_logo1{
+
+    padding-top: 3rem;
+    padding-right: 3rem;
+    display: block;
+    height: 200px;
+
+ }
+
+ .img_logo2 {
+  
+    padding-left: 4rem;
+    display: block;
+   height: 100px;
+
+ }
+
+}
